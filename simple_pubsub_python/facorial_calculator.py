@@ -4,7 +4,7 @@ from std_msgs.msg import Int64
 class BasicSubscriber(Node):
     
     def __init__(self):
-        super().__init__('sum_calculator')
+        super().__init__('facorial_calculator')
         self.subscription = self.create_subscription(Int64,'natural_number_signal',self.listener_callback,1)
         self.sum1 = 1
         self.subscription
