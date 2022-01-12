@@ -12,7 +12,6 @@ class BasicSubscriber(Node):
 
 
 
-
     def listener_callback(self, msg):
         if msg.data <=0:
             msg.data = 1
